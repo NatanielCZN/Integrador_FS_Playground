@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include('../partials/head.ejs') %>
+
+<body>
+  <%- include('../partials/navbar.ejs') %>  
+
+  <main id="tienda-container">
+    <header class="input-search">
+      <span class="search-icon"><i class="fas fa-search"></i></span>
+      <input type="text" placeholder="Buscar" />     
+    </header>
+
+    <section class="tendencias-container">
+      <h2 class="section-title">TENDENCIAS<i class="fas fa-caret-right"></i> <hr></h2>
+
+      <div class="tendencias-games">
+        <article class="game-card">
+          <a href="#">
+            <div class="game-img-container">
+              <img src="./images/tienda/mortal-kombat-1.png" alt="mortal-kombat-1" />
+            </div>
+            <h3 class="game-title">Mortal Kombat 1</h3>
+            <p class="game-genres">Acción, combate</p>
+            <p class="game-price">$50.000</p>           
+          </a>
+        </article>
+  
+        <article class="game-card">
+          <a href="#">
+            <div class="game-img-container">
+              <img src="./images/tienda/Fortnite.jpg" alt="fortnite" />
+            </div>
+            <h3 class="game-title">Fortnite</h3>
+            <p class="game-genres">Acción, shooter</p>
+            <p class="game-price">$50</p>
+          </a>
+        </article>
+  
+        <article class="game-card">
+          <a href="#">
+            <div class="game-img-container">
+              <img src="./images/tienda/fc-24.jpg" alt="fc-24" />
+            </div>
+            <h3 class="game-title">EAFC 24</h3>            
+            <p class="game-genres">Deporte</p>
+            <p class="game-price">$40.000</p>
+          </a>
+        </article>
+      </div>
+    </section>    
+
+    <section class="carousel-container">
+      <h2 class="section-title">NOVEDADES<i class="fas fa-caret-right"></i> <hr></h2>
+
+      <div class="carousel-images">
+        <ul>
+          <li class="carousel-item">
+            <a href="#">
+              <img src="./images/tienda/spiderman-2.jpg" alt="spiderman-2">
+              <div class="item-description">
+                <h3>Spider-Man 2</h3>
+                <p>Los Spider-Men Peter Parker y Miles Morales regresan en una nueva y emocionante aventura de la aclamada franquicia Marvel's Spider-Man.</p>
+              </div>
+            </a>            
+          </li>
+
+          <li class="carousel-item">
+            <a href="#">
+              <img src="./images/tienda/god-of-war-ragnarok.jpg" alt="god-of-war-ragnarok">
+              <div class="item-description">
+                <h3>GOD Ragnarok</h3>
+                <p>De la mano de Santa Monica Studio, llega la secuela del juego aclamado por la crítica: God of War (2018).</p>
+              </div>
+            </a>
+          </li>
+
+          <li class="carousel-item">            
+            <a href="#">
+              <img src="./images/tienda/gta-6.jpg" alt="gta-6">
+              <div class="item-description">
+                <h3>GTA 6</h3>
+                <p>GTA 6 te lleva al ficticio estado estadounidense de Leonida, hogar de la metrópoli Vice City con sede en Miami.</p>
+              </div>
+            </a>
+          </li>
+
+          <li class="carousel-item">
+            <a href="#">
+              <img src="./images/tienda/ufc-5.jpg" alt="ufc-5">
+              <div class="item-description">
+                <h3>UFC 5</h3>
+                <p>¿Qué distingue a las artes marciales mixtas? Los riesgos, la técnica, el drama y la realidad pura del momento. UFC 5 captura todo eso con detalles más auténticos que nunca, desde gráficos de próxima generación que renuevan la animación del juego.</p>
+              </div>
+            </a>
+          </li>
+
+          <li class="carousel-item">
+            <a href="#">
+              <img src="./images/tienda/back-4-blood.jpg" alt="back-4-blood">
+              <div class="item-description">
+                <h3>Back 4 Blood</h3>
+                <p>Estos huéspedes de un parásito, antes humanos, se convirtieron en criaturas terroríficas empeñadas en devorar lo que queda de la civilización.</p>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="categories-container">
+      <h2 class="section-title">CATEGORIAS<i class="fas fa-caret-right"></i> <hr></h2>
+
+      <div class="categories">
+        <article class="category-list">
+          <h3 class="category-title">
+            <span>SHOOTER</span>
+            <a href="#">Ver Mas</a>
+          </h3>
+
+          <ul>
+            <li class="category-item">
+              <a href="#">
+                <img src="./images/tienda/half-life.jpg" alt="half-life">
+                <div class="category-description">
+                  <h4 class="item-title">Half Life</h4>
+                  <p class="item-price">$500</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="category-item">
+              <a href="#">
+                <img src="./images/tienda/left-4-dead.jpg" alt="left-4-dead">
+                <div class="category-description">
+                  <h4 class="item-title">Left 4 Dead</h4>
+                  <p class="item-price">$700</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="category-item">
+              <a href="#">
+                <img src="./images/tienda/gta-v.jpg" alt="gta-v">
+                <div class="category-description">
+                  <h4 class="item-title">GTA V</h4>
+                  <p class="item-price">$3.500</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="category-item">
+              <a href="#">
+                <img src="./images/tienda/fortnite.jpg" alt="fortnite">
+                <div class="category-description">
+                  <h4 class="item-title">Fortnite</h4>
+                  <p class="item-price">$50</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </article>
+  
+        <article class="category-list">
+          <h3 class="category-title">TERROR <a href="#">Ver Mas</a></h3>
+
+          <ul>
+            <li class="category-item">
+              <a href="#">
+                <img src="./images/tienda/dead-by-daylight.jpg" alt="dead-by-daylight">
+                <div class="category-description">
+                  <h4 class="item-title">Dead by daylight</h4>
+                  <p class="item-price">$2900</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="category-item">
+              <a href="#">
+                <img src="./images/tienda/resident-evil-4-remake.jpg" alt="resident-evil-4-remake">
+                <div class="category-description">
+                  <h4 class="item-title">Resident Evil 4: Remake</h4>
+                  <p class="item-price">$2900</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="category-item">
+              <a href="#">              
+                <img src="./images/tienda/sons-of-the-forest.jpg" alt="sons-of-the-forest">
+                <div class="category-description">
+                  <h4 class="item-title">Sons of the Forest</h4>
+                  <p class="item-price">$5500</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="category-item">
+              <a href="#">
+                <img src="./images/tienda/back-4-blood.jpg" alt="back-4-blood">
+                <div class="category-description">
+                  <h4 class="item-title">Back 4 Blood</h4>
+                  <p class="item-price">$2500</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </article>
+  
+        <article class="category-list">
+          <h3 class="category-title">ACCI&Oacute;N<a href="#">Ver Mas</a></h3>
+
+          <ul>
+            <li class="category-item">
+              <a href="#">
+                <img src="./images/tienda/mortal-kombat-11.jpg" alt="mortal-kombat-11">
+                <div class="category-description">
+                  <h4 class="item-title">Mortal Kombat 11</h4>
+                  <p class="item-price">$6000</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="category-item">
+              <a href="#">
+                <img src="./images/tienda/wwe-2k23.jpg" alt="wwe-2k23">
+                <div class="category-description">
+                  <h4 class="item-title">WWE 2k23</h4>
+                  <p class="item-price">$5200</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="category-item">
+              <a href="#">
+                <img src="./images/tienda/tekken-7.jpg" alt="tekken-7">
+                <div class="category-description">
+                  <h4 class="item-title">Tekken 7</h4>
+                  <p class="item-price">$3500</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="category-item">
+              <a href="#">
+                <img src="./images/tienda/farcry-4.jpg" alt="farcry-4">
+                <div class="category-description">
+                  <h4 class="item-title">Farcry 4</h4>
+                  <p class="item-price">$4900</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <%- include('../partials/footer.ejs') %>
+
+  <script src="js/tienda.js"></script>
+</body>
+</html>

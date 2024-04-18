@@ -1,0 +1,137 @@
+.only-bg {
+  background-color: var(--var5);
+}
+
+/**
+  LOGIN ---------------------------------------
+*/
+#login-container,
+#register-container {
+  color: white;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+}
+
+.login-logo-gameverse {
+  width: 60px;
+  height: auto;
+  margin: 20px 0 10px;
+}
+
+.login-title {
+  margin: 0 0 20px;
+}
+
+.form-login-registro {
+  background-color: var(--var3);
+  padding: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 0.375rem;;
+  width: 100%;
+}
+
+.form-login-registro .input-group {
+  margin-bottom: 20px;
+}
+
+.form-login-registro .input-group>label>* {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 7.5px;
+}
+
+.form-login-registro .input-group>label>input {
+  padding: 7.5px 10px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 0.375rem;
+  background-color: var(--var4);
+  color: white;
+  width: 100%;
+}
+
+.form-login-registro .input-group>label>input:focus {
+  border-color: #87CEEB;
+  outline: none;
+}
+
+.form-login-registro>.button-group>button {
+  background-color: #008000;
+  color: white;
+  padding: 7.5px 10px;
+  margin-top: 5px;
+  width: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 0.375rem;
+}
+
+.form-login-registro>.button-group>button:hover {
+  background-color: #006400;
+  cursor: pointer;
+}
+
+/**
+  LOGIN MESSAGES ---------------------------------------
+*/
+.login-to-register {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0;
+  padding: 20px 10px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 0.375rem;
+  width: 100%;
+}
+
+.login-to-register>p {
+  margin: 0 0 10px;
+}
+
+.login-to-register>a {
+  text-decoration: none;
+  color: #2f81f7;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+/**
+  REGISTER ---------------------------------------
+*/
+.input-group input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(50%);
+}
+
+.input-group select {
+  width: 100%;
+  padding: 7.5px 10px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 0.375rem;
+  background-color: var(--var4);
+  color: white;
+}
+
+/**
+  MEDIA QUERIES ---------------------------------------
+*/
+@media (min-width: 480px) {
+  #register-container {
+    max-width: 500px;
+    padding: 0 10px;
+  }
+
+  .input-flex {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+  }
+
+  .input-flex .input-group{
+    width: 100%;
+    margin: 0;
+    margin-bottom: 7.5px;
+  }
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include('../partials/head.ejs') %>
+
+<body class="only-bg">
+  <main id="login-container">
+    <a href="/">      
+      <img src="images/navbar/gigagames_logo.png" alt="Logo Gigagames" class="login-logo-gameverse">
+    </a>
+
+    <h1 class="login-title">Iniciar Sesi&oacute;n</h1>
+
+    <form action="#" method="GET" class="form-login-registro">
+      <div class="input-group">
+        <label>
+          <span>Usuario</span>
+          <input type="text" name="usuario">
+        </label>
+      </div>
+
+      <div class="input-group">
+        <label>
+          <span>Contrase&nacute;a</span>
+          <input type="password" name="password">
+        </label>
+      </div>
+
+      <div class="button-group">
+        <button type="submit">Iniciar</button>
+      </div>
+    </form>
+
+    <div class="login-to-register">
+      <p>¿Nuevo en Gigagames?</p>
+      <a href="/registro">
+        <i class="fas fa-angle-left"></i>
+        Registrate
+        <i class="fas fa-angle-right"></i></i>
+      </a>
+    </div>
+  </main>
+</body>
+
+</html>

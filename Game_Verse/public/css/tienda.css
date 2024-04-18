@@ -1,0 +1,355 @@
+#tienda-container {
+    max-width: 1200px;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+.section-title {
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.section-title>i {
+    padding: 0;
+    margin: 0 0 0 10px;
+}
+
+.section-title>hr {
+    width: 100%;
+    margin-left: 10px;
+    border-color: var(--var5);
+    opacity: 0.5;
+}
+
+/**
+    HEADER ---------------------------------------
+*/
+.input-search {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 20px 0 0;
+    position: relative;
+}
+
+.input-search input {
+    background-color: rgba(200, 200, 200, 1);
+    border-radius: 0.375rem;
+    border: 1px solid var(--var5);
+    padding: 10px 10px 10px 35px;
+    width: 100%;
+}
+
+.input-search input:focus {
+    outline: none;
+    background-color: white;
+}
+
+.search-icon {
+    position: absolute;
+    left: 10px;
+    opacity: 0.25;
+}
+
+/**
+    TENDENCIAS ---------------------------------------
+*/
+.tendencias-container {
+    margin-top: 40px;
+}
+
+.tendencias-games {
+    display: block;
+}
+
+.game-card {
+    margin: 0 0 20px 0;
+    padding: 0;
+    background-color: var(--var2);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 0 0 0.375rem 0.375rem;
+}
+
+.game-card>a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+.game-img-container {
+    position: relative;
+    display: inline-block;
+}
+
+.game-img-container::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border-radius: 0 0 0.375rem 0.375rem;
+    background-color: rgba(255, 255, 255, 0);
+    transition-property: background-color;
+    transition-duration: 0.1s;
+    transition-timing-function: ease;
+}
+
+.game-card>a:hover>.game-img-container::before {
+    background-color: rgba(255, 255, 255, 0.25);
+}
+
+.game-img-container>img {    
+    max-width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: 0 0 0.375rem 0.375rem;
+    transition-duration: 0.1s;
+    transition-property: filter;
+    transition-timing-function: ease-in-out;
+}
+
+.game-title {
+    margin: 10px 0 5px 0;
+}
+
+.game-genres {
+    font-size: 14px;
+    margin: 0;
+    opacity: 0.5;
+}
+
+.game-price {
+    font-size: 20px;
+    margin: 20px 0 5px 0;
+}
+
+/**
+    CAROUSEL ---------------------------------------
+*/
+.carousel-container {
+    margin-top: 60px;
+}
+
+.carousel-images {
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.carousel-images>ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    transition-property: transform;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+}
+
+.carousel-item {
+    flex: 0 0 auto;
+    width: 100%;
+    position: relative;
+}
+
+.carousel-item>a {
+    text-decoration: none;
+    color: white;
+}
+
+.carousel-item>a>img {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+}
+
+.item-description {
+    display: none;
+}
+
+/**
+    CATEGORYS ---------------------------------------
+*/
+.categories-container {
+    margin: 60px 0 20px;
+}
+
+.categories {
+    display: block;
+}
+
+.category-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    color: white;
+    background-color: var(--var5);
+    border-radius: 0.375rem;
+    padding: 10px;
+    margin: 0 0 10px 0;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.category-title>span {
+    margin-right: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.category-title>a {
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    font-size: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 0.375rem;
+    padding: 10px;
+    transition-property: background-color, color;
+    transition-duration: 0.1s;
+    transition-timing-function: ease;
+}
+
+.category-title>a:hover {
+    background-color: white;
+    color: var(--var5);
+}
+
+.category-list>ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.category-item {
+    margin-bottom: 10px;
+    max-width: 100%;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.category-item>a {
+    background-color: var(--var2);
+    border-radius: 0.375rem;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    transition-property: background-color;
+    transition-duration: 0.1s;
+    transition-timing-function: ease;
+}
+
+.category-item>a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.category-item>a>img {
+    max-width: 50%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: 0.375rem;
+}
+
+.category-description {
+    margin: 0;
+    padding: 0 0 0 10px;
+    max-width: 50%;
+}
+
+.category-description>* {
+    margin: 0;
+    width: 100%;
+}
+
+.item-title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 20px;
+}
+
+.item-price {
+    font-size: 16px;
+    opacity: 0.5;
+}
+
+/**
+    MEDIA QUERIES ---------------------------------------
+*/
+@media (min-width: 480px) {
+    .input-search input {
+        width: 480px;
+    }
+
+    .section-title {
+        font-size: 28px;
+    }
+
+    .tendencias-games {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+    
+    .game-card {
+        margin: 0;
+    }
+
+    .categories {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+}
+
+@media (min-width: 800px) {
+    .tendencias-games {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .item-description {
+        display: block;
+        position: absolute;
+        right: 0;
+        bottom: 25%;
+        transform: translateY(50%);
+        width: 50%;
+        height: 40%;
+        padding: 20px;
+        background-color: rgba(0, 0, 0, 0.8);
+        border: 2px solid rgba(255, 255, 255, 0.5);
+        border-right: none;
+        border-radius: 0.375rem 0 0 0.375rem;
+    }
+
+    .item-description>* {
+        margin: 0;
+        overflow: hidden;
+    }
+
+    .item-description>h3 {
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    .item-description>p {
+        font-size: 18px;
+        line-height: 1.5;
+        max-height: 65%;
+        display: -webkit-box;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;
+    }
+
+    .categories {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}

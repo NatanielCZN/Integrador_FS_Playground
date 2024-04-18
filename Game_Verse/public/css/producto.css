@@ -1,0 +1,519 @@
+#product-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.product-title {
+  color: white;
+  text-align: center;
+  margin: 0;
+  padding: 20px 0;
+  background-color: var(--var4);
+}
+
+/**
+  CAROUSEL --------------------------------
+*/
+.carousel-provisorio img {
+  width: 100%;
+}
+
+/**
+  PRESENTATION --------------------------------
+*/
+.product-presentation {
+  display: block;
+}
+
+.product-data {
+  display: flex;
+  flex-direction: column-reverse;
+  background-color: var(--var4);
+  color: white;
+}
+
+.product-summary {
+  padding-bottom: 10px;
+}
+
+.product-summary-image>img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+}
+
+.product-summary-description {
+  padding: 5px 10px;
+}
+
+.product-summary-description>p:not(:first-child) {
+  padding: 5px 0;
+  margin: 0;
+}
+
+.product-summary-description>p>span {
+  opacity: 0.25;
+}
+
+.description-synopsis {
+  text-wrap: wrap;
+  margin: 0 0 10px 0;
+  overflow: hidden;
+}
+
+.description-synopsis {
+  line-height: 1.5;
+  max-height: 100%;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+}
+
+.description-separator {
+  opacity: 0.1;
+}
+
+.product-options {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px;
+  margin: 0;
+  padding: 10px;
+  background-color: var(--var3);
+}
+
+.option-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+  width: 100%;
+}
+
+.option-button>a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  background-color: #00688B;
+  color: white;
+  width: 100%;
+  height: 100%;
+  padding: 10px 5px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.option-button>a:hover {
+  background-color: #0077A0;
+}
+
+.option-button>a>i {
+  font-size: 20px;
+}
+
+.option-button>a>span {
+  display: none;
+}
+
+/**
+  FORM COMMENT --------------------------------
+*/
+.form-comment-container {
+  padding: 10px;
+}
+
+.form-comment-title {
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  background: linear-gradient(to right, #5ba32b, #6aa83e);
+  color: white;
+  padding: 10px 15px;
+  margin: 0 0 2.5px 0;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.form-comment-title>i {
+  margin: 0 10px 0 0;
+  padding: 0;
+  font-size: 20px;
+}
+
+.form-comment {
+  padding: 15px;
+  background-color: var(--var4);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.input-group-comment {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group-comment>span {
+  margin-bottom: 10px;
+  color: #0077A0;
+}
+
+.input-group-comment>p {
+  margin: 0 0 10px 0;
+  font-size: 14px;
+  opacity: .5;
+}
+
+.input-group-comment>textarea {
+  background-color: var(--var2);
+  color: white;
+  padding: 10px;
+  margin-bottom: 10px;
+  resize: none;
+}
+
+.input-group-check {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group-check>span {
+  margin-bottom: 10px;
+}
+
+.input-group-check-options {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.input-group-check-options>label {
+  background-color: #00688B;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px 10px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 1px;
+}
+
+.button-form-comment {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+.button-form-comment>button {
+  padding: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 1px;
+  background-color: #B3E5FC;
+  color: black;
+}
+
+.button-form-comment>button:hover {
+  background-color: #00688B;
+  color: white;
+}
+
+/**
+  EXTENDIDO --------------------------------
+*/
+.product-extend {
+  display: flex;
+  flex-direction: column-reverse;
+  padding: 10px;
+  padding-bottom: 0;
+}
+
+.product-buy {
+  background-color: var(--var4);
+  color: white;
+  padding: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 0.375rem;
+}
+
+.product-buy>h3 {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 0 0 20px 0;
+  font-size: 20px;
+  opacity: 0.75;
+}
+
+.product-price {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.product-price>* {
+  padding: 10px 15px;
+  border: 2px solid white;
+}
+
+.product-price>span {
+  border-right: none;
+  opacity: 0.75;
+}
+
+.product-price>a {
+  text-decoration: none;
+  white-space: nowrap;
+  background-color: #5ba32b;
+  color: white;
+}
+
+.product-price>a:hover {
+  background-color: #6aa83e;
+}
+
+.product-extend-description {
+  padding: 10px 0 0 0;
+  color: white;
+  line-height: 1.5;
+}
+
+.product-about>h3,
+.product-requirements>h3,
+.product-comments>h3 {
+  margin: 10px 0 5px 0;
+  text-transform: uppercase;
+}
+
+.product-about>hr,
+.product-requirements>hr,
+.product-comments>hr {
+  margin: 0;
+  border: none;
+  height: 1px;
+  background: linear-gradient(to right, white, var(--var1));
+}
+
+.product-about>p {
+  margin-bottom: 30px;
+}
+
+.product-requirements>ul {
+  list-style: none;
+  margin-bottom: 30px;
+  padding: 0;
+}
+
+.product-requirements>ul>li>span {
+  opacity: 0.25;
+}
+
+.product-comments {
+  padding: 0 10px;
+  color: white;
+  line-height: 1.5;
+}
+
+/**
+  COMMENTS --------------------------------
+*/
+.list-comments {
+  list-style: none;
+  padding: 0;
+  margin: 16px 0;
+}
+
+.list-comments>li {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 20px 0;
+  padding: 0;
+  background-color: var(--var2);
+}
+
+.comment-body {
+  padding: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-top: none;
+}
+
+.comment-recomendation,
+.comment-no-recomendation {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  color: white;
+}
+
+.comment-recomendation {
+  background-color: #5ba32b;
+}
+
+.comment-no-recomendation {
+  background-color: #B71C1C;
+}
+
+.comment-recomendation>i,
+.comment-no-recomendation>i {
+  margin-right: 5px;
+}
+
+.comment-user {
+  display: flex;
+  align-items: center;
+}
+
+.comment-user>img {
+  margin-right: 10px;
+  width: 50px;
+  height: 50px;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border: 1px solid rgba(255, 255, 255, 1);
+}
+
+.comment-user>span {
+  font-weight: bold;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.comment-date {
+  text-transform: uppercase;
+  margin: 10px 0 0 0;
+  opacity: .5;
+}
+
+.comment {
+  margin: 0;
+  padding: 15px 0;
+}
+
+@media (min-width: 800px) {
+  .product-title {
+    background-color: transparent;
+    text-align: start;
+    margin: 10px;
+  }
+
+  /**
+    PRESENTATION --------------------------------
+  */
+  .product-presentation {
+    margin: 0 10px;
+  }
+
+  .product-data {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+  }
+
+  .carousel-provisorio {
+    flex: 70%;
+  }
+
+  .product-summary {
+    flex: 30%;
+    padding: 0;
+  }
+
+  .product-summary-image {
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+  }
+
+  .product-summary-description {
+    padding: 10px;
+    padding-left: 0;
+    font-size: 14px;
+  }
+
+  /**
+    OPTIONS --------------------------------
+  */
+  .product-options {
+    justify-content: space-between;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-top: none;
+  }
+
+  .option-button>a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    width: 100%;
+    height: 100%;
+    padding: 10px 5px;
+  }
+
+  .option-button>a>i {
+    font-size: 20px;
+  }
+
+  .option-button>a>span {
+    display: block;
+  }
+
+  /**
+    FORM COMMENT -----------------------------
+  */
+  .form-comment-container {
+    padding: 10px 0;
+  }
+
+  .input-group-check {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .input-group-check>span {
+    margin: 0;
+  }
+
+  /**
+    EXTEND --------------------------------
+  */
+  .product-extend {
+    flex-direction: row;
+    gap: 10px;
+    padding: 20px 10px 0;
+
+  }
+
+  .product-extend-description {
+    padding: 0;
+    flex: 60%;
+  }
+
+  .product-buy {
+    flex: 40%;
+    width: 40%;
+    height: 100%;
+  }
+
+  .product-about>h3,
+  .product-requirements>h3,
+  .product-comments>h3 {
+    margin: 0 0 5px;
+  }
+
+  /**
+    COMMENTS --------------------------------
+  */
+  .list-comments {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  .list-comments>li {
+    margin: 0;
+  }
+}
