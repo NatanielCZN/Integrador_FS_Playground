@@ -40,32 +40,32 @@ Tipografia: [Google Fonts - Rubik](https://fonts.google.com/specimen/Rubik)
 
 ### Home
 
-![Home](Wireframes/Sprint01_Grupo01_Home.png)
+![Home](Wireframes/Sprint01_Home.png)
 
 ### Tienda
 
-![Tienda](Wireframes/Sprint01_Grupo01_Tienda.png)
+![Tienda](Wireframes/Sprint01_Tienda.png)
 
 ### Detalles de Producto
 
-![Tienda](Wireframes/Sprint01_Grupo01_Pagina_Producto.png)
+![Tienda](Wireframes/Sprint01_Pagina_Producto.png)
 
 ### Carrito de Compra
 
-![Tienda](Wireframes/Sprint01_Grupo01_Carrito_de_Compra.png)
+![Tienda](Wireframes/Sprint01_Carrito_de_Compra.png)
 
 ### Login
 
-![Login](Wireframes/Sprint01_Grupo01_Formulario_Login.png)
+![Login](Wireframes/Sprint01_Formulario_Login.png)
 
 ### Registro
 
-![Registro](Wireframes/Sprint01_Grupo01_Formulario_Registro.png)
+![Registro](Wireframes/Sprint01_Formulario_Registro.png)
 
 ### Acerca de
 
-![Acerca de](Wireframes/Sprint01_Grupo01_AcercaDe.png)
+![Acerca de](Wireframes/Sprint01_AcercaDe.png)
 
 ### Contacto
 
-![Contacto](Wireframes/Sprint01_Grupo01_Contacto.png)
+![Contacto](Wireframes/Sprint01_Contacto.png)
