@@ -1,0 +1,20 @@
+:root {
+  --var1: #480b5a;
+  --var2: #3c084b;
+  --var3: #30063d;
+  --var4: #24032e;
+  --var5: #18001f;
+}
+
+* {  
+  box-sizing: border-box;
+  font-family: "Play", sans-serif;
+}
+
+html {
+  background-color: var(--var5);
+}
+
+body {  
+  background-color: var(--var1);
+}

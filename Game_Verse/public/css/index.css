@@ -1,0 +1,87 @@
+.carousel-container {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow-x: hidden;
+}
+
+/**
+  IMAGES ---------------------------
+*/
+.carousel-track {
+    display: flex;
+    aspect-ratio: 16 / 9;    
+    scroll-snap-type: x mandatory;
+    transition: transform 0.5s ease;
+}
+
+.carousel-item {
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+    object-fit: cover;
+}
+
+/**
+    BUTTONS ---------------------------
+*/
+.carousel-btn {
+    position: absolute;
+    top: 50%;    
+    padding: 10px;
+    font-size: 8vw;
+    background-color: transparent;
+    border: none;
+    opacity: 25%;
+    cursor: pointer;
+}
+
+#antBtn {
+    left: 0;
+}
+
+#sigBtn {
+    right: 0;    
+}
+
+#antBtn,
+#sigBtn {
+    transform: translateY(-50%);
+}
+
+.carousel-btn:hover {
+    background-color: var(--var1);
+}
+
+/**
+    INDICATORS ---------------------------
+*/
+.carousel-indicators {    
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);    
+}
+
+.indicator {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.indicator.active {
+    background-color: var(--var1);
+    opacity: 1;
+}
+
+/**
+    MEDIA QUERIES ---------------------------
+*/
+@media (min-width: 800px) {
+    .carousel-btn {
+        font-size: 60px;
+    }
+}

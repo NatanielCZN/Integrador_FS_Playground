@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include('../partials/head.ejs') %>
+
+<body>
+  <%- include('../partials/navbar.ejs') %>
+
+  <main id="product-container">
+    <h2 class="product-title">Grand Theft Auto V</h2>
+
+    <section class="product-presentation">
+      <div class="product-data">
+        <div class="carousel-provisorio">
+          <img src="images/tienda/gta-6.jpg" alt="GTA6">
+        </div>
+
+        <aside class="product-summary">
+          <div class="product-summary-image">
+            <img src="images/tienda/gta-v.jpg" alt="GTA6">
+          </div>
+
+          <div class="product-summary-description">
+            <p class="description-synopsis">
+              Grand Theft Auto V para PC ofrece a los jugadores la opción de explorar el galardonado mundo de Los Santos y el condado de Blaine con una resolución de 4K y disfrutar del juego a 60 fotogramas por segundo.
+              
+            </p>
+            <hr class="description-separator">
+
+            <p class="description-reviews">
+              <span>Reseñas: </span>Positivas
+            </p>
+
+            <p class="description-date">
+              <span>Fecha de lanzamiento: </span>14 ABR 2015
+            </p>
+
+            <p class="description-company">
+              <span>Desarrolladora: </span>Rockstar North
+            </p>
+            
+            <p class="description-classification">
+              <span>Clasificacion: </span>+13
+            </p>
+
+            <p class="description-genre">
+              <span>Genero: </span> Acción
+            </p>
+          </div>
+        </aside>
+      </div>
+      
+      <ul class="product-options">
+        <li class="option-button">
+          <a href="#"><i class="fas fa-heart"></i>
+            <span>Favorito</span></a>
+        </li>
+
+        <li class="option-button">
+          <a href="#"><i class="fab fa-youtube"></i>
+            <span>Trailer</span></a>
+        </li>
+
+        <li class="option-button">
+          <a href="#"><i class="fas fa-globe"></i>
+            <span>Web</span></a>
+        </li>
+      </ul>
+
+      <div class="form-comment-container">
+        <h4 class="form-comment-title">
+          <i class="fas fa-bars"></i>
+          <span>En biblioteca</span>
+        </h4>
+
+        <form action="#" method="GET" class="form-comment">
+          <label class="input-group-comment">
+            <span>Escribe una rese&ntilde;a de Grand Theft Auto V</span>
+            <p>Describe lo que te ha gustado o no de este juego y si se lo recomendarías a otros.</p>
+            <textarea name="comment" id="idComment" rows="6"></textarea>            
+          </label class="input-group-check">
+
+          <div class="input-group-check">
+            <span>¿Recomiendas este juego?</span>
+
+            <div class="input-group-check-options">
+              <label>
+                <input type="radio" name="opcion" value="yes"> Si
+              </label>
+  
+              <label>
+                <input type="radio" name="opcion" value="no"> No
+              </label>
+            </div>
+          </div>
+  
+          <div class="button-form-comment">
+            <button type="submit">Publicar</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section class="product-extend">
+      <div class="product-extend-description">
+        <div class="product-about">
+          <h3>Acerca del juego</h3>
+          <hr>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos tempora cumque magnam repudiandae velit nostrum fuga dignissimos ea eaque vitae incidunt officia labore dicta totam corrupti voluptatibus inventore, doloribus dolorem?</p>
+        </div>
+  
+        <div class="product-requirements">
+          <h3>Requisitos</h3>
+          <hr>
+          <ul>
+            <li><span>SO:</span>Windows</li>
+            <li><span>Procesador: </span>AMD</li>
+            <li><span>Memoria: </span>8 GB de RAM</li>
+            <li><span>Graficos: </span> NVIDIA®GeForce</li>
+            <li><span>Almacenamiento: </span> 52 GB de espacio disponible</li>
+            <li><span>Red: </span>Conexion de banda ancha a internet</li>
+          </ul>
+        </div>
+      </div>
+
+      <aside class="product-buy">
+        <h3>Comprar Grand Theft Auto V</h3>
+
+        <div class="product-price">
+          <span>$10.000</span>
+          <a href="#">Agregar al <i class="fas fa-shopping-cart"></i></a>
+        </div>
+      </aside>      
+    </section>
+
+    <section class="product-comments">
+      <h3>Comentarios</h3>
+      <hr>
+
+      <ul class="list-comments">
+        <li>
+          <div class="comment-recomendation">
+            <i class="fas fa-thumbs-up"></i>
+            <span>Recomendado</span>
+          </div>
+
+          <div class="comment-body">
+            <div class="comment-header">
+              <div class="comment-user">
+                <img src="images/producto/YO.jpg" alt="Nombre">
+                <span>Nataniel Cazon</span>
+              </div>
+  
+              <div class="comment-date">
+                Publicada el 30 de junio de 2020
+              </div>
+            </div>
+  
+            <p class="comment">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+          </div>
+        </li>
+
+        <li>
+          <div class="comment-recomendation">
+            <i class="fas fa-thumbs-up"></i>
+            <span>Recomendado</span>
+          </div>
+
+          <div class="comment-body">
+            <div class="comment-header">
+              <div class="comment-user">
+                <img src="images/producto/YO.jpg" alt="Nombre">
+                <span>Nataniel Cazon</span>
+              </div>
+  
+              <div class="comment-date">
+                Publicada el 30 de junio de 2020
+              </div>
+            </div>
+  
+            <p class="comment">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+          </div>
+        </li>
+
+        <li>
+          <div class="comment-no-recomendation">
+            <i class="fas fa-thumbs-down"></i>
+            <span>No recomendado</span>
+          </div>
+
+          <div class="comment-body">
+            <div class="comment-header">
+              <div class="comment-user">
+                <img src="images/producto/YO.jpg" alt="Nombre">
+                <span>Nataniel Cazon</span>
+              </div>
+  
+              <div class="comment-date">
+                Publicada el 30 de junio de 2020
+              </div>
+            </div>
+  
+            <p class="comment">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+          </div>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <%- include('../partials/footer.ejs') %>
+</body>
+
+</html>
