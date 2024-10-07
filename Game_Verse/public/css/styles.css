@@ -1,9 +1,9 @@
 :root {
-  --var1: #480b5a;
-  --var2: #3c084b;
-  --var3: #30063d;
-  --var4: #24032e;
-  --var5: #18001f;
+  --var1: #282e5e;
+  --var2: #1e234f;
+  --var3: #141740;
+  --var4: #0a0c31;
+  --var5: #000022;
 }
 
 * {  
@@ -16,5 +16,5 @@ html {
 }
 
 body {  
-  background-color: var(--var1);
+  background-color: var(--var4);
 }
